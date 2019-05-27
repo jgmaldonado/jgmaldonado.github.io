@@ -73,8 +73,8 @@
 <br><b>Pero... ¿Qué es un sistema operativo?</b><br>
          
  El sistema operativo es la pieza fundamental del software para ejecutar tareas en cualquier dispositivo inteligente. 
-La mayoría de los dispositivos tienen dos modos de operación: modo kernel y modo usuario. El sistema operativo se ejecuta en modo kernel. En este modo, el sistema operativo tiene acceso completo a todo el hardware y puede elaborar cualquier instrucción que la máquina sea capaz de ejecutar. El resto del software se ejecuta en modo usuario, en el cual sólo un subconjunto de las instrucciones de máquina es permitido y durante un tiempo. 
-El núcleo o kernel en particular, se ocupa de las instrucciones que afectan el control de la máquina, Proporcionan una asignación ordenada y controlada de los procesadores, memorias y dispositivos de E/S, entre los diversos programas que compiten por estos recursos, haciendo abstracción de los complejos conjuntos de hardware. 
+La mayoría de los dispositivos tienen dos modos de operación: <b>modo kernel y modo usuario</b>. El sistema operativo se ejecuta en modo kernel. En este modo, el sistema operativo tiene acceso completo a todo el hardware y puede ejecutar cualquier instrucción que la máquina sea capaz de hacer. El resto del software se ejecuta en modo usuario, en el cual sólo un subconjunto de las instrucciones de máquina es permitido y durante un tiempo limitado. 
+El <b>núcleo o kernel</b> en particular, se ocupa de las instrucciones que afectan el control de la máquina, Proporcionan una asignación ordenada y controlada de los procesadores, memorias y dispositivos de E/S, entre los diversos programas que compiten por estos recursos, haciendo abstracción de los complejos conjuntos de hardware. 
 Los sistemas operativos que operan en estos dispositivos de bolsillo son cada vez más sofisticados,
 con la habilidad de proporcionar telefonía, fotografía digital y otras funciones. Muchos de
 ellos también ejecutan aplicaciones desarrolladas por terceros. De hecho, algunos están comenzando
@@ -82,26 +82,16 @@ a asemejarse a los sistemas operativos de computadoras personales de hace una d�
 las principales diferencias entre los dispositivos de bolsillo y las PCs es que los primeros no tienen
 discos duros de varios cientos de gigabytes, lo cual cambia rápidamente. Dos de los sistemas operativos
 más populares para los dispositivos de bolsillo son Symbian OS y Palm OS.
-Un concepto clave en todos los sistemas operativos es el proceso. Un proceso es en esencia un programa
-en ejecución. Cada proceso tiene asociado un espacio de direcciones, que es  una lista de ubicaciones
-de memoria. Toda la información acerca de cada proceso (además del contenido de su propio espacio de direcciones) se almacena en una tabla del sistema operativo, conocida como la tabla de procesos, la que es un arreglo de estructuras, una para cada proceso que tenga. Así, un proceso es listado de direcciones que guarda el contenido de sus registros y los pasos necesarios para reiniciarlo cuando sea llamado. 
-Cuando escribimos una instrucción  en un (dir, mount, ) intérprete de comandos o shell de comandos de una terminal hacemos una llamada al sistema de administración de procesos. El proceso se “levanta” en memoria ejecutándose de acuerdo a su listado de instrucciones, cuando termina ejecuta una llamada para terminarse a si mismo.   
-
-Las llamadas al sistema de administración de procesos clave son las que se encargan de la creación
-y la terminación de los procesos. Considere un ejemplo común. Un proceso llamado intérprete
-de comandos o shell lee comandos de una terminal. El usuario acaba de escribir un comando,
-solicitando la compilación de un programa. El shell debe entonces crear un proceso para ejecutar el
-compilador. Cuando ese proceso ha terminado la compilación, ejecuta una llamada al sistema para
-terminarse a sí mismo.
-
-Otro concepto clave de casi todos los sistemas operativos es el sistema de archivos. una de las funciones principales del sistema operativo es ocultar las peculiaridades de los discos y demás dispositivos de E/S, presentando al programador un modelo abstracto limpio y agradable de archivos independientes del dispositivo
-la mayoría de los sistemas
-operativos tienen el concepto de un directorio como una manera de agrupar archivos
-En el caso de Unix-Linux los archivos son “montados” para que el kernel sepa de su existencia asi como el montar los discos físicos 
+Un concepto clave en todos los sistemas operativos es <b>El proceso</b>. Un proceso es en esencia un programa
+en ejecución. Cada proceso tiene asociado un <b>espacio de direcciones</b>, que es una lista de ubicaciones
+de memoria. Toda la información acerca de cada proceso (además del contenido de su propio espacio de direcciones) se almacena en una tabla del sistema operativo, conocida como la <b>tabla de procesos</b>, la que es un arreglo de estructuras, una para cada proceso que tenga. Así, un proceso es listado de direcciones que guarda el contenido de sus registros y los pasos necesarios para reiniciarlo cuando sea llamado. 
+Cuando escribimos una instrucción en un (dir, mount por ejemplo ) intérprete de comandos o shell de una terminal hacemos una llamada al sistema de administración de procesos. El proceso se “levanta” en memoria ejecutándose de acuerdo a su listado de instrucciones. Cuando termina ejecuta una llamada para terminarse a si mismo.   
+Otro concepto clave de casi todos los sistemas operativos es <b>El sistema de archivos</b>. una de las funciones principales del sistema operativo es ocultar las peculiaridades de los discos y demás dispositivos de E/S, presentando al programador un modelo abstracto limpio y agradable de archivos independientes del dispositivo. 
+La mayoría de los sistemas operativos usan el concepto de <b>un directorio</b> como una manera de agrupar archivos. En el caso de Unix-Linux los archivos son “montados” para que el kernel sepa de su existencia asi como el montar los discos físicos.
        
-         
+      
 
-<img class="img" src="https://www.blockchaineconomia.es/wp-content/uploads/2018/08/blockchain-497x243.jpg" style="width:287px;height:133px;"><br>
+<img class="img" src="http://tuxtor.shekalug.org/wp-content/uploads/2013/11/explore_linux_kernel.png" style="width:550px;height:314px;"><br>
           
 
 </div>
